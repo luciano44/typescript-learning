@@ -1,0 +1,13 @@
+{
+  "name": "ts-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "tsc --watch",
+    "dev": "node --watch build/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
