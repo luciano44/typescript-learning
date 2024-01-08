@@ -1,3 +1,5 @@
+// Classes / Interface
+
 class Person {
   _name: string
   _age: number
@@ -57,3 +59,31 @@ console.log(dev.name)
 console.log(dev.age)
 console.log(dev.code())
 console.log(dev.greet())
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+
+interface IPerson {
+  name: string
+  age: number
+  greet: () => string
+}
+
+class MyPerson implements IPerson {
+  name: string
+  age: number
+
+  constructor(name: string, age: number) {
+    this.name = name
+    this.age = age
+  }
+
+  greet() {
+    return `Hello, my name is ${this.name}`
+  }
+}
+
+const p = new Person("Luciano", 44)
+
+console.log(p.greet())

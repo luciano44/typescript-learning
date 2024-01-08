@@ -4,10 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "watch": "tsc --watch",
-    "dev": "node --watch build/index.js"
+    "dev": "node --watch dist/index.js",
+    "ts": "tsc --watch"
   },
   "devDependencies": {
+    "lorem-ipsum": "^2.0.8",
     "typescript": "^5.3.3"
   }
 }
