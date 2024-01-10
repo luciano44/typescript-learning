@@ -14,6 +14,7 @@ const midw1 = (req: Request, res: Response, next: NextFunction) => {
   req.myProp = 100
   next()
 }
+
 const midw2 = (req: Request, res: Response, next: NextFunction) => {
   console.log("custom prop value is: " + req.myProp)
   req.myProp = 600
