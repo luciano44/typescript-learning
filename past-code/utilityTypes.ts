@@ -54,3 +54,10 @@ type UserKeys = "name" | "age" | "address"
 type UserValues = string | number | object
 
 type UserRecord = Record<UserKeys, UserValues>
+
+type DirectionsTypes = `${"top" | "bottom"}-${"left" | "right"}`
+
+type PersonFruitTypes = `${"🧑" | "👰"}-${"🍎" | "🍍"}`
+
+type LowercaseGreeting = "hello, world"
+type Greeting = Capitalize<LowercaseGreeting>
